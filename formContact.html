@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de contacto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="main-header">
+    <nav class="navbar">
+      <div class="logo">FemPower Gym</div>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="dropdown">
+          <a href="classGym.html">Clases</a>
+          <div class="megamenu">
+            <div class="column">
+              <h3>Funcionales</h3>
+              <a href="#funcional">Entrenamiento Funcional</a>
+              <a href="#gap">GAP</a>
+              <a href="#hiit">HIIT Power</a>
+              <a href="#fuerza">Fuerza con Pesas</a>
+            </div>
+            <div class="column">
+              <h3>Cardio y Ritmo</h3>
+              <a href="#cardio">Cardio Intenso</a>
+              <a href="#dance">Dance Fit</a>
+              <a href="#box">Box Femenino</a>
+            </div>
+            <div class="column">
+              <h3>Bienestar</h3>
+              <a href="#yoga">Yoga Femenino</a>
+              <a href="#stretching">Stretching & Flexibilidad</a>
+              <a href="#postparto">Post Parto Activo</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="coachGym.html">Entrenadoras</a></li>
+        <li class="dropdown">
+          <a href="paymentGym.html">Planes</a>
+          <div class="megamenu">
+            <div class="column">
+              <h3>Elige tu plan</h3>
+              <a href="#plan-basico">Plan Básico</a>
+              <a href="#plan-intermedio">Plan Intermedio</a>
+              <a href="#plan-premium">Plan Premium</a>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Testimonios</a>
+          <div class="megamenu">
+            <div class="column">
+              <h3>Ellas dicen</h3>
+              <a href="#clientas">Clientas</a>
+              <a href="#entrenadoras-test">Entrenadoras</a>
+              <a href="#profesoras">Profesoras</a>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="blogGym.html">Blog de fitness</a>
+      </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pagina-contacto">
+    <section class="contacto-avanzado">
+      <h2>¡Contáctanos!</h2>
+      <p>Por favor, completa el siguiente formulario y te responderemos a la brevedad.</p>
+      <form class="formulario-contacto">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required :valid :invalid>
+            <span class="error-message">Por favor, ingresa tu nombre.</span>
+          </div>
+          <div class="form-group">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required :valid :invalid>
+            <span class="error-message">Por favor, ingresa tu apellido.</span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required :valid :invalid>
+            <span class="error-message">Por favor, ingresa un email válido.</span>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" :valid :invalid>
+            <span class="error-message">Por favor, ingresa un teléfono válido.</span>
+          </div>
+          <div class="form-group">
+            <label for="asunto">Asunto:</label>
+            <select id="asunto" name="asunto" required :valid :invalid>
+              <option value="">Selecciona un asunto</option>
+              <option value="informacion_clases">Información sobre clases</option>
+              <option value="planes_membresia">Planes de membresía</option>
+              <option value="horarios">Consulta de horarios</option>
+              <option value="soporte_tecnico">Soporte técnico</option>
+              <option value="otros">Otros</option>
+            </select>
+            <span class="error-message">Por favor, selecciona un asunto.</span>
+          </div>
+          <div class="form-group full-width">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="7" required :valid :invalid></textarea>
+            <span class="error-message">Por favor, ingresa tu mensaje.</span>
+          </div>
+          <button type="submit" class="submit-button">
+            Enviar
+            <div class="spinner"></div>
+          </button>
+        </div>
+      </form>
+      <div id="modal-confirmacion" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <p>¡Mensaje enviado correctamente! Nos pondremos en contacto contigo pronto.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-social">
+      <a href="https://www.instagram.com/ivnny_24/" target="_blank" class="social-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/ivanna.zenarruza?mibextid=ZbWKwL" target="_blank" class="social-icon">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://wa.me/5493884850324" target="_blank" class="social-icon">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <form class="newsletter-form">
+      <input type="email" placeholder="Tu email" />
+      <button>Suscribirme</button>
+    </form>
+    
+      <div class="footer-social">
+        </div>
+  
+      <div class="footer-contact-cta">
+        <p>¿Tienes alguna consulta o deseas más información?</p>
+        <a href="formContact.html" class="button">¡Contáctanos aquí!</a>
+      </div>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58224.696097493834!2d-65.34675500372497!3d-24.20525582409645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f4e8bd7a62f%3A0x315150e057f6e499!2sSan%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1744317180832!5m2!1ses-419!2sar"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <div class="footer-info">
+      <p>© 2025 FemPower. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+
+</body>
+</html>

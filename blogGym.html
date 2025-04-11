@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gimnasio - Clases</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="navbar">
+      <div class="logo">FemPower Gym</div>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="dropdown">
+          <a href="classGym.html">Clases</a>
+          <div class="megamenu">
+            <div class="column">
+              <h3>Funcionales</h3>
+              <a href="#funcional">Entrenamiento Funcional</a>
+              <a href="#gap">GAP</a>
+              <a href="#hiit">HIIT Power</a>
+              <a href="#fuerza">Fuerza con Pesas</a>
+            </div>
+            <div class="column">
+              <h3>Cardio y Ritmo</h3>
+              <a href="#cardio">Cardio Intenso</a>
+              <a href="#dance">Dance Fit</a>
+              <a href="#box">Box Femenino</a>
+            </div>
+            <div class="column">
+              <h3>Bienestar</h3>
+              <a href="#yoga">Yoga Femenino</a>
+              <a href="#stretching">Stretching & Flexibilidad</a>
+              <a href="#postparto">Post Parto Activo</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="coachGym.html">Entrenadoras</a></li>
+        <li class="dropdown">
+          <a href="paymentGym.html">Planes</a>
+          <div class="megamenu">
+            <div class="column">
+              <h3>Elige tu plan</h3>
+              <a href="#plan-basico">Plan Básico</a>
+              <a href="#plan-intermedio">Plan Intermedio</a>
+              <a href="#plan-premium">Plan Premium</a>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Testimonios</a>
+          <div class="megamenu">
+            <div class="column">
+              <h3>Ellas dicen</h3>
+              <a href="#clientas">Clientas</a>
+              <a href="#entrenadoras-test">Entrenadoras</a>
+              <a href="#profesoras">Profesoras</a>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="blogGym.html">Blog de fitness</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <br>
+  <h2>Bienestar para Todas</h2>
+  <br>
+  <nav class="filter-nav">
+    <div class="filter-group">
+      <label for="category-filter">Categoría:</label>
+      <select id="category-filter">
+        <option value="">Todas</option>
+        <option value="entrenamiento">Entrenamiento</option>
+        <option value="nutricion">Nutrición</option>
+        <option value="bienestar">Bienestar</option>
+        <option value="motivacion">Motivación</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="tag-filter">Etiquetas:</label>
+      <select id="tag-filter">
+        <option value="">Todas</option>
+        <option value="principiante">Principiante</option>
+        <option value="mujer">Mujer</option>
+        <option value="recetas">Recetas</option>
+        <option value="yoga">Yoga</option>
+        <option value="postparto">Postparto</option>
+        <option value="fuerza">Fuerza</option>
+        <option value="avanzado">Avanzado</option>
+        <option value="motivacion">Motivación</option>
+      </select>
+    </div>
+  </nav>
+  </header>
+
+  <main class="blog-grid">
+
+    <article class="blog-post" data-category="entrenamiento" data-tags="principiante,mujer">
+      <div class="post-image">
+        <img src="img/sentadilla.jpg" alt="Mujer haciendo sentadillas">
+      </div>
+      <h2 class="post-title">Comienza tu viaje de fuerza: Guía para principiantes</h2>
+      <p class="post-excerpt">Descubre los ejercicios fundamentales para construir una base sólida de fuerza. Rutinas
+        sencillas, consejos clave y la motivación que necesitas para empezar tu camino hacia un cuerpo más fuerte y
+        saludable. ¡Es hora de sentirte poderosa!</p>
+      <a href="#" class="read-more-btn">Leer más</a>
+      <div class="post-meta">
+        <span class="category">Entrenamiento</span>
+        <span class="tags">#Principiante #Fuerza #Mujer</span>
+      </div>
+      <section class="comments">
+        <h3>Comentarios</h3>
+        <div class="comment">
+          <div class="avatar" data-author="Ana"></div>
+          <div class="comment-content">
+            <strong>Ana:</strong> ¡Excelente guía! Justo lo que necesitaba para empezar.
+          </div>
+        </div>
+        <div class="comment">
+          <div class="avatar" data-author="Laura"></div>
+          <div class="comment-content">
+            <strong>Laura:</strong> Muy útil, gracias por los consejos.
+          </div>
+        </div>
+        <div class="comment-form">
+          <h3>Deja un comentario</h3>
+          <textarea placeholder="Tu comentario aquí..."></textarea>
+          <button>Publicar</button>
+        </div>
+      </section>
+    </article>
+
+    <article class="blog-post" data-category="nutricion" data-tags="recetas,mujer">
+      <div class="post-image">
+        <img src="img/desayuno.jpg" alt="Bowl de desayuno saludable">
+      </div>
+      <h2 class="post-title">Desayunos energéticos para mujeres activas</h2>
+      <p class="post-excerpt">Recetas deliciosas y nutritivas para empezar el día con la energía que necesitas para tus
+        entrenamientos y actividades diarias. Desde bowls repletos de vitaminas hasta opciones rápidas y prácticas.
+        ¡Nutre tu cuerpo desde la primera hora! Te enseñaremos como llevar un menu saludable y como armar un plan
+        alimenticio en base a los ejercicios y actividades que realizas</p>
+      <a href="#" class="read-more-btn">Leer más</a>
+      <div class="post-meta">
+        <span class="category">Nutrición</span>
+        <span class="tags">#Recetas #Mujer</span>
+      </div>
+      <section class="comments">
+        <h3>Comentarios</h3>
+        <div class="comment">
+          <div class="avatar" data-author="Sofía"></div>
+          <div class="comment-content">
+            <strong>Sofía:</strong> ¡Qué ideas tan geniales! Ya quiero probarlas.
+          </div>
+        </div>
+        <div class="comment-form">
+          <h3>Deja un comentario</h3>
+          <textarea placeholder="Tu comentario aquí..."></textarea>
+          <button>Publicar</button>
+        </div>
+      </section>
+    </article>
+
+    <article class="blog-post" data-category="bienestar" data-tags="yoga,mujer,postparto">
+      <div class="post-image">
+        <img src="img/yoga.jpg" alt="Mujer haciendo una postura de yoga">
+      </div>
+      <h2 class="post-title">Yoga suave para la recuperación postparto: Conecta con tu cuerpo</h2>
+      <p class="post-excerpt">Una guía de posturas de yoga seguras y efectivas diseñadas específicamente para ayudar a
+        las mujeres a reconectar con su cuerpo después del parto, fortalecer suavemente los músculos y encontrar
+        equilibrio y bienestar emocional. Ven a relajarte y a encontrarte contigo misma en nuestras clases
+        personalizadas</p>
+      <a href="#" class="read-more-btn">Leer más</a>
+      <div class="post-meta">
+        <span class="category">Bienestar</span>
+        <span class="tags">#Yoga #Mujer #Postparto</span>
+      </div>
+      <section class="comments">
+        <h3>Comentarios</h3>
+        <div class="comment">
+          <div class="avatar" data-author="Valentina"></div>
+          <div class="comment-content">
+            <strong>Valentina:</strong> Esto es justo lo que buscaba. ¡Gracias!
+          </div>
+        </div>
+        <div class="comment-form">
+          <h3>Deja un comentario</h3>
+          <textarea placeholder="Tu comentario aquí..."></textarea>
+          <button>Publicar</button>
+        </div>
+      </section>
+    </article>
+
+    <article class="blog-post" data-category="motivacion" data-tags="mujer">
+      <div class="post-image">
+        <img src="img/sonrisa.jpg" alt="Mujer fuerte y sonriente">
+      </div>
+      <h2 class="post-title">Encuentra tu fuerza interior: Consejos de motivación para mujeres imparables</h2>
+      <p class="post-excerpt">Estrategias y reflexiones para cultivar la confianza, superar los desafíos y mantener la
+        motivación en tu camino hacia tus metas de fitness y bienestar. ¡Recuerda lo poderosa que eres!</p>
+      <a href="#" class="read-more-btn">Leer más</a>
+      <div class="post-meta">
+        <span class="category">Motivación</span>
+        <span class="tags">#Motivación #Mujer</span>
+      </div>
+      <section class="comments">
+        <h3>Comentarios</h3>
+        <div class="comment">
+          <div class="avatar" data-author="Isabella"></div>
+          <div class="comment-content">
+            <strong>Isabella:</strong> ¡Me inspiró muchísimo! Gracias por estas palabras.
+          </div>
+        </div>
+        <div class="comment-form">
+          <h3>Deja un comentario</h3>
+          <textarea placeholder="Tu comentario aquí..."></textarea>
+          <button>Publicar</button>
+        </div>
+      </section>
+    </article>
+
+    <article class="blog-post" data-category="entrenamiento" data-tags="avanzado,mujer,fuerza">
+      <div class="post-image">
+        <img src="img/pesas.jpg" alt="Mujer levantando pesas">
+      </div>
+      <h2 class="post-title">Desafía tus límites: Rutina de fuerza avanzada para mujeres</h2>
+      <p class="post-excerpt">Si ya tienes experiencia en el entrenamiento de fuerza, esta rutina te ayudará a llevar
+        tus límites al siguiente nivel. Ejercicios compuestos, técnicas avanzadas y el enfoque para seguir progresando
+        hacia tus objetivos más ambiciosos.</p>
+      <a href="#" class="read-more-btn">Leer más</a>
+      <div class="post-meta">
+        <span class="category">Entrenamiento</span>
+        <span class="tags">#Avanzado #Fuerza #Mujer</span>
+      </div>
+      <section class="comments">
+        <h3>Comentarios</h3>
+        <div class="comment">
+          <div class="avatar" data-author="Camila"></div>
+          <div class="comment-content">
+            <strong>Camila:</strong> ¡Lista para este desafío! Gracias por la rutina.
+          </div>
+        </div>
+        <div class="comment-form">
+          <h3>Deja un comentario</h3>
+          <textarea placeholder="Tu comentario aquí..."></textarea>
+          <button>Publicar</button>
+        </div>
+      </section>
+    </article>
+
+    <article class="blog-post" data-category="nutricion" data-tags="recetas">
+      <div class="post-image">
+        <img src="img/ensalada.jpg" alt="Ensalada colorida y saludable">
+      </div>
+      <h2 class="post-title">Ensaladas llenas de vida: Ideas creativas y nutritivas</h2>
+      <p class="post-excerpt">Más allá de la lechuga y el tomate: descubre combinaciones deliciosas y repletas de
+        nutrientes para tus ensaladas. Aprende a equilibrar sabores, texturas y a incorporar ingredientes que te aporten
+        energía y vitalidad.</p>
+      <a href="#" class="read-more-btn">Leer más</a>
+      <div class="post-meta">
+        <span class="category">Nutrición</span>
+        <span class="tags">#Recetas</span>
+      </div>
+      <section class="comments">
+        <h3>Comentarios</h3>
+        <div class="comment">
+          <div class="avatar" data-author="Martina"></div>
+          <div class="comment-content">
+            <strong>Martina:</strong> ¡Amo las ensaladas! Gracias por estas nuevas ideas.
+          </div>
+        </div>
+        <div class="comment-form">
+          <h3>Deja un comentario</h3>
+          <textarea placeholder="Tu comentario aquí..."></textarea>
+          <button>Publicar</button>
+        </div>
+      </section>
+    </article>
+
+    <!-- Nuevos posts agregados -->
+    <article class="blog-post" data-category="entrenamiento" data-tags="mujer,cardio">
+      <div class="post-image">
+        <img src="img/Cardio.jpg" alt="Mujer haciendo cardio">
+      </div>
+      <h2 class="post-title">Cardio para mujeres: Beneficios y rutinas</h2>
+      <p class="post-excerpt">Descubre cómo el ejercicio cardiovascular puede mejorar tu salud y bienestar. Rutinas adaptadas para mujeres de todos los niveles.</p>
+      <a href="#" class="read-more-btn">Leer más</a>
+      <div class="post-meta">
+        <span class="category">Entrenamiento</span>
+        <span class="tags">#Cardio #Mujer</span>
+      </div>
+      <section class="comments">
+        <h3>Comentarios</h3>
+        <div class="comment">
+          <div class="avatar" data-author="Usuario"></div>
+          <div class="comment-content">
+            <strong>Usuario:</strong> ¡Genial artículo! Estoy emocionada por empezar.
+          </div>
+        </div>
+        <div class="comment-form">
+          <h3>Deja un comentario</h3>
+          <textarea placeholder="Tu comentario aquí..."></textarea>
+          <button>Publicar</button>
+        </div>
+      </section>
+    </article>
+
+    <article class="blog-post" data-category="bienestar" data-tags="mujer">
+      <div class="post-image">
+        <img src="img/Bienestar.jpg" alt="Mujer relajada">
+      </div>
+      <h2 class="post-title">Bienestar integral: Más allá del ejercicio</h2>
+      <p class="post-excerpt">Consejos para un estilo de vida saludable que combine ejercicio, alimentación y cuidado mental.</p>
+      <a href="#" class="read-more-btn">Leer más</a>
+      <div class="post-meta">
+        <span class="category">Bienestar</span>
+        <span class="tags">#Bienestar #Mujer</span>
+      </div>
+      <section class="comments">
+        <h3>Comentarios</h3>
+        <div class="comment">
+          <div class="avatar" data-author="Usuario"></div>
+          <div class="comment-content">
+            <strong>Ivy</strong> Me encantan las clases y la profe
+          </div>
+        </div>
+        <div class="comment-form">
+          <h3>Deja un comentario</h3>
+          <textarea placeholder="Tu comentario aquí..."></textarea>
+          <button>Publicar</button>
+        </div>
+      </section>
+    </article>
+
+    <article class="blog-post" data-category="entrenamiento" data-tags="box,mujer">
+      <div class="post-image">
+        <img src="img/Clase Box.jpg" alt="Mujer boxeando">
+      </div>
+      <h2 class="post-title">Boxeo femenino: Técnicas básicas</h2>
+      <p class="post-excerpt">Aprende los fundamentos del boxeo y cómo puede ayudarte a mejorar tu condición física y confianza.</p>
+      <a href="#" class="read-more-btn">Leer más</a>
+      <div class="post-meta">
+        <span class="category">Entrenamiento</span>
+        <span class="tags">#Boxeo #Mujer</span>
+      </div>
+      <section class="comments">
+        <h3>Comentarios</h3>
+        <div class="comment">
+          <div class="avatar" data-author="Usuario"></div>
+          <div class="comment-content">
+            <strong>Lucy</strong> Muy copada la profe y las compañeras tambien
+          </div>
+        </div>
+        <div class="comment-form">
+          <h3>Deja un comentario</h3>
+          <textarea placeholder="Tu comentario aquí..."></textarea>
+          <button>Publicar</button>
+        </div>
+      </section>
+    </article>
+
+    <article class="blog-post" data-category="nutricion" data-tags="recetas">
+      <div class="post-image">
+        <img src="img/correr.jpg" alt="Mujer corriendo">
+      </div>
+      <h2 class="post-title">Alimentación para corredoras</h2>
+      <p class="post-excerpt">Qué comer antes, durante y después de correr para maximizar tu rendimiento y recuperación.</p>
+      <a href="#" class="read-more-btn">Leer más</a>
+      <div class="post-meta">
+        <span class="category">Nutrición</span>
+        <span class="tags">#Recetas #Running</span>
+      </div>
+    </article>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-social">
+      <a href="https://www.instagram.com/ivnny_24/" target="_blank" class="social-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/ivanna.zenarruza?mibextid=ZbWKwL" target="_blank" class="social-icon">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://wa.me/5493884850324" target="_blank" class="social-icon">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <form class="newsletter-form">
+      <input type="email" placeholder="Tu email" />
+      <button>Suscribirme</button>
+    </form>
+    
+      <div class="footer-social">
+        </div>
+  
+      <div class="footer-contact-cta">
+        <p>¿Tienes alguna consulta o deseas más información?</p>
+        <a href="formContact.html" class="button">¡Contáctanos aquí!</a>
+      </div>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58224.696097493834!2d-65.34675500372497!3d-24.20525582409645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f4e8bd7a62f%3A0x315150e057f6e499!2sSan%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1744317180832!5m2!1ses-419!2sar"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <div class="footer-info">
+      <p>© 2025 FemPower. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,390 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gimnasio - Clases</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="main-header">
+    <nav class="navbar">
+      <div class="logo">FemPower Gym</div>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="dropdown">
+          <a href="classGym.html">Clases</a>
+          <div class="megamenu">
+            <div class="column">
+              <h3>Funcionales</h3>
+              <a href="#funcional">Entrenamiento Funcional</a>
+              <a href="#gap">GAP</a>
+              <a href="#hiit">HIIT Power</a>
+              <a href="#fuerza">Fuerza con Pesas</a>
+            </div>
+            <div class="column">
+              <h3>Cardio y Ritmo</h3>
+              <a href="#cardio">Cardio Intenso</a>
+              <a href="#dance">Dance Fit</a>
+              <a href="#box">Box Femenino</a>
+            </div>
+            <div class="column">
+              <h3>Bienestar</h3>
+              <a href="#yoga">Yoga Femenino</a>
+              <a href="#stretching">Stretching & Flexibilidad</a>
+              <a href="#postparto">Post Parto Activo</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="coachGym.html">Entrenadoras</a></li>
+        <li class="dropdown">
+          <a href="paymentGym.html">Planes</a>
+          <div class="megamenu">
+            <div class="column">
+              <h3>Elige tu plan</h3>
+              <a href="#plan-basico">Plan Básico</a>
+              <a href="#plan-intermedio">Plan Intermedio</a>
+              <a href="#plan-premium">Plan Premium</a>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Testimonios</a>
+          <div class="megamenu">
+            <div class="column">
+              <h3>Ellas dicen</h3>
+              <a href="#clientas">Clientas</a>
+              <a href="#entrenadoras-test">Entrenadoras</a>
+              <a href="#profesoras">Profesoras</a>
+            </div>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="blogGym.html">Blog de fitness</a>
+      </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="clases-main">
+    <section class="filtro-clases">
+      <h2> ¿Cuáles son nuestras clases?</h2>
+      <div class="filtros">
+        <label>
+          <input type="checkbox" id="funcional-filter" name="categoria" value="funcional"> Funcionales
+        </label>
+        <label>
+          <input type="checkbox" id="cardio-ritmo-filter" name="categoria" value="cardio-ritmo"> Cardio y Ritmo
+        </label>
+        <label>
+          <input type="checkbox" id="bienestar-filter" name="categoria" value="bienestar"> Bienestar
+        </label>
+        <button id="filtrar-btn">Filtrar Clases</button>
+      </div>
+    </section>
+    <h2>Todas Nuestras Clases</h2>
+    <section class="lista-clases">
+   
+      <div class="clase-card-full funcional">
+        <div class="card-imagen">
+          <img src="img/Clase Entrenamiento.jpg" alt="Entrenamiento Funcional">
+        </div>
+        <div class="card-info">
+          <h3>Entrenamiento Funcional</h3>
+          <p><strong>¿Para qué sirve?</strong> Mejora la fuerza, la resistencia, la flexibilidad, el equilibrio y la coordinación, preparando tu cuerpo para las actividades de la vida diaria.</p>
+          <p><strong>¿Qué se hace?</strong> Se utilizan movimientos que imitan acciones cotidianas, como empujar, tirar, levantar, rotar y agacharse, utilizando el propio peso corporal, bandas de resistencia, pesas rusas y otros implementos.</p>
+          <p class="horario"><strong>Horario:</strong> Lunes 17:00 - 18:00 (Profesora: Sofía Mendoza), Miércoles 19:00 - 20:00 (Profesora: Valeria Castro)</p>
+        </div>
+      </div>
+
+      <div class="clase-card-full funcional">
+        <div class="card-imagen">
+          <img src="img/Clase GAP.jpg" alt="GAP (Glúteos, Abdominales, Piernas)">
+        </div>
+        <div class="card-info">
+          <h3>GAP (Glúteos, Abdominales, Piernas)</h3>
+          <p><strong>¿Para qué sirve?</strong> Tonifica y fortalece específicamente los glúteos, el abdomen y las piernas, mejorando la firmeza y la resistencia en estas áreas clave.</p>
+          <p><strong>¿Qué se hace?</strong> Se realizan ejercicios específicos para cada grupo muscular, como sentadillas, estocadas, elevaciones de cadera, planchas y crunches, a menudo con el uso de pesas ligeras o bandas elásticas.</p>
+          <p class="horario"><strong>Horario:</strong> Martes 18:00 - 19:00 (Profesora: Lucía Vargas), Jueves 17:00 - 18:00 (Profesora: Camila Ruiz)</p>
+        </div>
+      </div>
+
+      <div class="clase-card-full funcional">
+        <div class="card-imagen">
+          <img src="img/Clase HIIT.jpg" alt="HIIT Power">
+        </div>
+        <div class="card-info">
+          <h3>HIIT Power</h3>
+          <p><strong>¿Para qué sirve?</strong> Quema una gran cantidad de calorías en poco tiempo, mejora la resistencia cardiovascular y aumenta el metabolismo incluso después de terminar el entrenamiento.</p>
+          <p><strong>¿Qué se hace?</strong> Se alternan ráfagas cortas de ejercicio intenso con períodos breves de descanso o actividad de baja intensidad. Los ejercicios pueden incluir saltos, sprints, burpees y otros movimientos de alta demanda.</p>
+          <p class="horario"><strong>Horario:</strong> Miércoles 10:00 - 10:30 (Profesora: Martina Flores), Viernes 18:00 - 18:30 (Profesora: Elena Jiménez)</p>
+        </div>
+      </div>
+
+      <div class="clase-card-full funcional">
+        <div class="card-imagen">
+          <img src="img/Clase Fuerza.jpg" alt="Fuerza con Pesas">
+        </div>
+        <div class="card-info">
+          <h3>Fuerza con Pesas</h3>
+          <p><strong>¿Para qué sirve?</strong> Desarrolla la fuerza muscular, aumenta la masa muscular magra, mejora la postura y la densidad ósea, y contribuye a un metabolismo más eficiente.</p>
+          <p><strong>¿Qué se hace?</strong> Se utilizan pesas libres (barras, mancuernas) y máquinas para trabajar los principales grupos musculares con un enfoque en la técnica y la progresión de carga.</p>
+          <p class="horario"><strong>Horario:</strong> Lunes 19:00 - 20:00 (Profesora: Ana Pérez), Jueves 19:00 - 20:00 (Profesora: Isabel Torres)</p>
+        </div>
+      </div>
+
+      <div class="clase-card-full cardio-ritmo">
+        <div class="card-imagen">
+          <img src="img/Cardio.jpg" alt="Cardio Intenso">
+        </div>
+        <div class="card-info">
+          <h3>Cardio Intenso</h3>
+          <p><strong>¿Para qué sirve?</strong> Mejora significativamente la salud cardiovascular, aumenta la resistencia, quema calorías y ayuda a controlar el peso corporal.</p>
+          <p><strong>¿Qué se hace?</strong> Se realizan actividades aeróbicas de alta intensidad como correr en cinta, elíptica, saltar la cuerda, o circuitos de ejercicios cardiovasculares.</p>
+          <p class="horario"><strong>Horario:</strong> Martes 10:00 - 11:00 (Profesora: Laura Gómez), Viernes 10:00 - 11:00 (Profesora: Patricia Silva)</p>
+        </div>
+      </div>
+
+      <div class="clase-card-full cardio-ritmo">
+        <div class="card-imagen">
+          <img src="img/Clase Dance.jpg" alt="Dance Fit">
+        </div>
+        <div class="card-info">
+          <h3>Dance Fit</h3>
+          <p><strong>¿Para qué sirve?</strong> Es una forma divertida y efectiva de hacer ejercicio cardiovascular, mejorar la coordinación, el ritmo y la flexibilidad, además de liberar estrés.</p>
+          <p><strong>¿Qué se hace?</strong> Se siguen coreografías sencillas y motivadoras de diferentes estilos de baile, como salsa, zumba, hip-hop, combinando el ejercicio con la diversión.</p>
+          <p class="horario"><strong>Horario:</strong> Miércoles 18:00 - 19:00 (Profesora: Carolina Núñez), Sábado 11:00 - 12:00 (Profesora: Andrea Ríos)</p>
+        </div>
+      </div>
+
+      <div class="clase-card-full cardio-ritmo">
+        <div class="card-imagen">
+          <img src="img/Clase Box.jpg" alt="Box Femenino">
+        </div>
+        <div class="card-info">
+          <h3>Box Femenino</h3>
+          <p><strong>¿Para qué sirve?</strong> Desarrolla la fuerza, la velocidad, la agilidad, la coordinación y la resistencia cardiovascular, además de ser una excelente forma de liberar tensión y ganar confianza.</p>
+          <p><strong>¿Qué se hace?</strong> Se aprenden las técnicas básicas de boxeo (golpes, defensa, juego de pies) y se realizan ejercicios con sacos, guantes y protectores, enfocándose en el acondicionamiento físico integral.</p>
+          <p class="horario"><strong>Horario:</strong> Jueves 10:00 - 11:00 (Profesora: Fernanda Díaz), Sábado 12:00 - 13:00 (Profesora: Rocío Méndez)</p>
+        </div>
+      </div>
+
+      <div class="clase-card-full bienestar">
+        <div class="card-imagen">
+          <img src="img/Clase Yoga.jpg" alt="Yoga Femenino">
+        </div>
+        <div class="card-info">
+          <h3>Yoga Femenino</h3>
+          <p><strong>¿Para qué sirve?</strong> Aumenta la flexibilidad, la fuerza, el equilibrio y la conciencia corporal, aliviando el estrés y la tensión, y promoviendo el bienestar mental y emocional específico para las mujeres.</p>
+          <p><strong>¿Qué se hace?</strong> Se practican posturas (asanas) adaptadas a la anatomía y las necesidades femeninas, con énfasis en la respiración y la relajación.</p>
+          <p class="horario"><strong>Horario:</strong> Lunes 10:00 - 11:00 (Profesora: Martina Flores), Viernes 17:00 - 18:00 (Profesora: Gisela Vargas)</p>
+        </div>
+      </div>
+
+      <div class="clase-card-full bienestar">
+        <div class="card-imagen">
+          <img src="img/Clase Scretching.jpg" alt="Stretching & Flexibilidad">
+        </div>
+        <div class="card-info">
+          <h3>Stretching & Flexibilidad</h3>
+          <p><strong>¿Para qué sirve?</strong> Mejora la amplitud de movimiento de las articulaciones, previene lesiones, reduce el dolor muscular y mejora la postura.</p>
+          <p><strong>¿Qué se hace?</strong> Se realizan ejercicios de estiramiento estáticos y dinámicos, enfocándose en los principales grupos musculares para aumentar la flexibilidad y la movilidad.</p>
+          <p class="horario"><strong>Horario:</strong> Martes 19:00 - 20:00 (Profesora: Julieta Sánchez), Jueves 18:00 - 19:00 (Profesora: Natalia Pérez)</p>
+        </div>
+      </div>
+
+      <div class="clase-card-full bienestar">
+        <div class="card-imagen">
+          <img src="img/Clase Postparto.jpg" alt="Post Parto Activo">
+        </div>
+        <div class="card-info">
+          <h3>Post Parto Activo</h3>
+          <p><strong>¿Para qué sirve?</strong> Ayuda a las mujeres a recuperar su condición física después del embarazo de forma segura y gradual, fortaleciendo el suelo pélvico, el abdomen y la espalda, y mejorando la energía.</p>
+          <p><strong>¿Qué se hace?</strong> Se realizan ejercicios de bajo impacto específicos para la recuperación postparto, enfocándose en la activación del core, la postura y la tonificación muscular suave.</p>
+          <p class="horario"><strong>Horario:</strong> Miércoles 11:00 - 12:00 (Profesora: Romina Díaz), Viernes 11:00 - 12:00 (Profesora: Silvina López)</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="galeria-clases">
+      <h2 class="album-titulo">Nuestro álbum de fotos </h2>
+      <div class="grid-fotos">
+        <div class="foto-card">
+          <div class="foto-imagen"><img src="img/G1.jpg" alt="Foto 1"></div>
+          <div class="foto-overlay">Ver Foto</div>
+        </div>
+        <div class="foto-card">
+          <div class="foto-imagen"><img src="img/G2.jpg" alt="Foto 2"></div>
+          <div class="foto-overlay">Ver Foto</div>
+        </div>
+        <div class="foto-card">
+          <div class="foto-imagen"><img src="img/G3.jpg" alt="Foto 3"></div>
+          <div class="foto-overlay">Ver Foto</div>
+        </div>
+        <div class="foto-card">
+          <div class="foto-imagen"><img src="img/G4.jpg" alt="Foto 4"></div>
+          <div class="foto-overlay">Ver Foto</div>
+        </div>
+        <div class="foto-card">
+          <div class="foto-imagen"><img src="img/G5.jpg" alt="Foto 5"></div>
+          <div class="foto-overlay">Ver Foto</div>
+        </div>
+        <div class="foto-card">
+          <div class="foto-imagen"><img src="img/G6.jpg" alt="Foto 6"></div>
+          <div class="foto-overlay">Ver Foto</div>
+        </div>
+        <div class="foto-card">
+          <div class="foto-imagen"><img src="img/G7.jpg" alt="Foto 7"></div>
+          <div class="foto-overlay">Ver Foto</div>
+        </div>
+        <div class="foto-card">
+          <div class="foto-imagen"><img src="img/G8.jpg" alt="Foto 8"></div>
+          <div class="foto-overlay">Ver Foto</div>
+        </div>
+        <div class="foto-card">
+          <div class="foto-imagen"><img src="img/G9.jpg" alt="Foto 9"></div>
+          <div class="foto-overlay">Ver Foto</div>
+        </div>
+        <div class="foto-card">
+          <div class="foto-imagen"><img src="img/G10.jpg" alt="Foto 10"></div>
+          <div class="foto-overlay">Ver Foto</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="horarios-semanales">
+      <h2>Horario Semanal de Clases</h2>
+      <div class="tabla-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Lunes</th>
+              <th>Martes</th>
+              <th>Miércoles</th>
+              <th>Jueves</th>
+              <th>Viernes</th>
+              <th>Sábado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10:00 - 11:00</td>
+              <td>Yoga Femenino (Martina Flores)</td>
+              <td>Cardio Intenso (Laura Gómez)</td>
+              <td>HIIT Power (Martina Flores)</td>
+              <td>Box Femenino (Fernanda Díaz)</td>
+              <td>Cardio Intenso (Patricia Silva)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>11:00 - 12:00</td>
+              <td></td>
+              <td></td>
+              <td>Post Parto Activo (Romina Díaz)</td>
+              <td></td>
+              <td>Post Parto Activo (Silvina López)</td>
+              <td>Dance Fit (Andrea Ríos)</td>
+            </tr>
+            <tr>
+              <td>17:00 - 18:00</td>
+              <td>Entrenamiento Funcional (Sofía Mendoza)</td>
+              <td></td>
+              <td></td>
+              <td>GAP (Camila Ruiz)</td>
+              <td>Yoga Femenino (Gisela Vargas)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>18:00 - 19:00</td>
+              <td></td>
+              <td>GAP (Lucía Vargas)</td>
+              <td>Dance Fit (Carolina Núñez)</td>
+              <td>Stretching & Flexibilidad (Natalia Pérez)</td>
+              <td>HIIT Power (Elena Jiménez)</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>19:00 - 20:00</td>
+              <td>Fuerza con Pesas (Ana Pérez)</td>
+              <td>Stretching & Flexibilidad (Julieta Sánchez)</td>
+              <td>Entrenamiento Funcional (Valeria Castro)</td>
+              <td>Fuerza con Pesas (Isabel Torres)</td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-social">
+      <a href="https://www.instagram.com/ivnny_24/" target="_blank" class="social-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/ivanna.zenarruza?mibextid=ZbWKwL" target="_blank" class="social-icon">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://wa.me/5493884850324" target="_blank" class="social-icon">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <form class="newsletter-form">
+      <input type="email" placeholder="Tu email" />
+      <button>Suscribirme</button>
+    </form>
+    
+      <div class="footer-social">
+        </div>
+  
+      <div class="footer-contact-cta">
+        <p>¿Tienes alguna consulta o deseas más información?</p>
+        <a href="formContact.html" class="button">¡Contáctanos aquí!</a>
+      </div>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58224.696097493834!2d-65.34675500372497!3d-24.20525582409645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f4e8bd7a62f%3A0x315150e057f6e499!2sSan%20Salvador%20de%20Jujuy%2C%20Jujuy!5e0!3m2!1ses-419!2sar!4v1744317180832!5m2!1ses-419!2sar"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <div class="footer-info">
+      <p>© 2025 FemPower. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const filtros = document.querySelectorAll('.filtros input[type="checkbox"]');
+      const filtrarBtn = document.getElementById('filtrar-btn');
+      const clases = document.querySelectorAll('.lista-clases .clase-card-full');
+
+      filtrarBtn.addEventListener('click', function() {
+        const categoriasSeleccionadas = Array.from(filtros)
+          .filter(checkbox => checkbox.checked)
+          .map(checkbox => checkbox.value);
+
+        clases.forEach(clase => {
+          const claseCategoria = clase.classList[1]; // La segunda clase CSS es la categoría
+          if (categoriasSeleccionadas.length === 0 || categoriasSeleccionadas.includes(claseCategoria)) {
+            clase.style.display = 'block';
+          } else {
+            clase.style.display = 'none';
+          }
+        });
+      });
+
+      // Mostrar todas las clases al cargar la página
+      clases.forEach(clase => {
+        clase.style.display = 'block';
+      });
+    });
+  </script>
+</body>
+</html>
